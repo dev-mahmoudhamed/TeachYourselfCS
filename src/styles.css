@@ -62,8 +62,8 @@
   --spacing-6: 1.5rem;
   --spacing-8: 2rem;
   --spacing-12: 3rem;
-  --spacing-16: 4rem;
-  --spacing-20: 5rem;
+  --spacing-16: 2.5rem; /* Reduced from 4rem */
+  --spacing-20: 3rem; /* Reduced from 5rem */
   
   /* Border Radius */
   --radius-sm: 4px;
@@ -116,8 +116,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { font-size: var(--font-size-4xl); }
-h2 { font-size: var(--font-size-3xl); border-bottom: 1px solid var(--color-border-primary); padding-bottom: var(--spacing-2); margin-top: var(--spacing-12); }
-h3 { font-size: var(--font-size-2xl); margin-top: var(--spacing-8); }
+h2 { font-size: var(--font-size-3xl); margin-top: var(--spacing-8); }
+h3 { font-size: var(--font-size-2xl); margin-top: var(--spacing-6); }
 h4 { font-size: var(--font-size-xl); }
 
 p {

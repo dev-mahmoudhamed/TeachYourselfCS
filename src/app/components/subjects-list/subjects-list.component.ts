@@ -31,13 +31,15 @@ import { SubjectCardComponent } from '../subject-card/subject-card.component';
 
     .section-title {
       margin-bottom: var(--spacing-4);
+      padding-bottom: var(--spacing-2);
     }
 
     .subjects-container {
       display: flex;
       flex-direction: column;
-      gap: var(--spacing-12);
-      margin-top: var(--spacing-8);
+      gap: 0;
+      margin-top: var(--spacing-4);
+      border-bottom: 2px solid var(--color-border-primary);
     }
 
     .new-subjects-label {

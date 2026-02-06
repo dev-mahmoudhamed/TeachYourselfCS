@@ -19,8 +19,16 @@ import { Subject } from '../../models/subject.model';
       </div>
       
       <div class="subject-body">
-        <p class="description">{{ subject.description }}</p>
-        <p class="why">{{ subject.whyLearn }}</p>
+        <div class="description-container">
+          <div class="text-content">
+            <p class="description">{{ subject.description }}</p>
+            <p class="why">{{ subject.whyLearn }}</p>
+          </div>
+          <div class="image-placeholder">
+            <!-- Image placeholder for future use -->
+            <div class="placeholder-box"></div>
+          </div>
+        </div>
         
         <div class="primary-resources">
           <div class="resource-block">
@@ -72,7 +80,13 @@ import { Subject } from '../../models/subject.model';
   styles: [`
     .subject-card {
       padding-top: var(--spacing-8);
+      padding-bottom: var(--spacing-8);
+      border-bottom: 2px solid var(--color-border-primary);
       scroll-margin-top: 80px;
+    }
+
+    .subject-card:last-child {
+      border-bottom: none;
     }
 
     .subject-header {
@@ -80,8 +94,6 @@ import { Subject } from '../../models/subject.model';
       justify-content: space-between;
       align-items: baseline;
       margin-bottom: var(--spacing-4);
-      border-bottom: 1px solid var(--color-border-primary);
-      padding-bottom: var(--spacing-2);
     }
 
     .subject-title {
@@ -105,6 +117,35 @@ import { Subject } from '../../models/subject.model';
       color: var(--color-text-tertiary);
     }
 
+    .description-container {
+      display: flex;
+      gap: var(--spacing-8);
+      margin-bottom: var(--spacing-8);
+    }
+
+    .text-content {
+      flex: 3;
+    }
+
+    .image-placeholder {
+      flex: 1;
+      display: none; /* Hidden by default until images are added */
+    }
+
+    /* Show on larger screens if needed, strictly as requested, currently just a placeholder div */
+    @media (min-width: 768px) {
+      .image-placeholder {
+        display: block;
+      }
+    }
+
+    .placeholder-box {
+      width: 100%;
+      padding-bottom: 150%; /* Aspect ratio */
+      background-color: var(--color-bg-secondary);
+      border-radius: var(--radius-sm);
+    }
+
     .subject-body .description {
       font-size: var(--font-size-lg);
       color: var(--color-text-primary);
@@ -114,7 +155,7 @@ import { Subject } from '../../models/subject.model';
     .subject-body .why {
       font-size: var(--font-size-base);
       color: var(--color-text-secondary);
-      margin-bottom: var(--spacing-8);
+      margin-bottom: 0;
     }
 
     h4 {
@@ -130,6 +171,10 @@ import { Subject } from '../../models/subject.model';
       grid-template-columns: 1fr 1fr;
       gap: var(--spacing-8);
       margin-bottom: var(--spacing-8);
+      background: var(--color-bg-secondary);
+      padding: var(--spacing-6);
+      border-radius: var(--radius-md);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
     }
 
     .resource-item a {
@@ -175,6 +220,14 @@ import { Subject } from '../../models/subject.model';
       .primary-resources {
         grid-template-columns: 1fr;
         gap: var(--spacing-6);
+      }
+      
+      .description-container {
+        flex-direction: column;
+      }
+      
+      .image-placeholder {
+        display: none;
       }
     }
   `]
