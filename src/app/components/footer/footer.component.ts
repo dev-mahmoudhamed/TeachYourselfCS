@@ -21,9 +21,8 @@ import { Component } from '@angular/core';
           <div class="footer-links">
             <h3>Resources</h3>
             <ul>
-              <li><a href="https://bradfieldcs.com" target="_blank" rel="noopener">Bradfield CS</a></li>
-              <li><a href="https://github.com/ossu/computer-science" target="_blank" rel="noopener">OSSU Curriculum</a></li>
               <li><a href="https://teachyourselfcs.com" target="_blank" rel="noopener">Original Site</a></li>
+              <li><a href="https://github.com/ossu/computer-science" target="_blank" rel="noopener">OSSU Curriculum</a></li>
             </ul>
           </div>
         </div>

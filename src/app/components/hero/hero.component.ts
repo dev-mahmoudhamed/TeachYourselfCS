@@ -25,10 +25,6 @@ import { Component } from '@angular/core';
         <p class="hero-subtext">
           This guide is our attempt to definitively answer these questions.
         </p>
-        
-        <div class="hero-cta">
-          <a href="#tldr" class="btn-simple">Jump to TL;DR</a>
-        </div>
       </div>
     </section>
   `,
