@@ -32,11 +32,11 @@ interface FAQItem {
     }
 
     .faq-list {
-      margin-top: var(--spacing-8);
+      margin-top: var(--spacing-2);
     }
 
     .faq-item {
-      margin-bottom: var(--spacing-4);
+      margin-bottom: var(--spacing-1);
       border-bottom: 1px solid var(--color-border-primary);
     }
 

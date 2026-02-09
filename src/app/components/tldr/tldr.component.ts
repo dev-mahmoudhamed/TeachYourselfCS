@@ -71,11 +71,12 @@ import { SubjectsService } from '../../services/subjects.service';
   styles: [`
     .tldr {
       background: var(--color-bg-primary);
+      padding: var(--spacing-0) 0;
     }
 
     .table-responsive {
       overflow-x: auto;
-      margin: var(--spacing-8) 0;
+      margin: var(--spacing-8) 0
       border: 1px solid var(--color-border-primary);
       border-radius: var(--radius-md);
     }

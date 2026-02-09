@@ -78,15 +78,15 @@ import { Subject } from '../../models/subject.model';
     </article>
   `,
   styles: [`
-    .subject-card {
-      padding-top: var(--spacing-8);
-      padding-bottom: var(--spacing-8);
+:host {
+      display: block;
       border-bottom: 2px solid var(--color-border-primary);
-      scroll-margin-top: 80px;
     }
 
-    .subject-card:last-child {
-      border-bottom: none;
+    .subject-card {
+      padding-top: var(--spacing-8);
+      padding-bottom: var(--spacing-4);
+      scroll-margin-top: 80px;
     }
 
     .subject-header {

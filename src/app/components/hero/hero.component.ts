@@ -30,7 +30,7 @@ import { Component } from '@angular/core';
   `,
   styles: [`
     .hero {
-      padding: var(--spacing-20) 0 var(--spacing-12);
+      padding: var(--spacing-12) 0 var(--spacing-2);
       text-align: left;
     }
 

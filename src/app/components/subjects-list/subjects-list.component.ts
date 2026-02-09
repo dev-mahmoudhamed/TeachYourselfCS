@@ -10,7 +10,7 @@ import { SubjectCardComponent } from '../subject-card/subject-card.component';
   template: `
     <section id="subjects" class="subjects-list">
       <div class="container content-container">
-        <h2 class="section-title">Subject Guides</h2>
+        <h2 class="section-title" style="margin-top: var(--spacing-2);">Subject Guides</h2>
         <div class="subjects-container">
           @for (subject of subjects; track subject.id; let i = $index) {
             @if (subject.isNew && i === getFirstNewIndex()) {
@@ -49,6 +49,10 @@ import { SubjectCardComponent } from '../subject-card/subject-card.component';
       margin-top: var(--spacing-12);
       padding-bottom: var(--spacing-4);
       border-bottom: 2px solid var(--color-border-primary);
+    }
+
+    app-subject-card:last-child {
+      border-bottom: none;
     }
   `]
 })

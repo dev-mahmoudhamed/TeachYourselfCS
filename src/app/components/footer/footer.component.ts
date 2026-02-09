@@ -35,7 +35,7 @@ import { Component } from '@angular/core';
   `,
   styles: [`
     .footer {
-      padding: var(--spacing-16) 0 var(--spacing-8);
+      padding: var(--spacing-16) 0 var(--spacing-2);
       border-top: 1px solid var(--color-border-primary);
       margin-top: var(--spacing-20);
       background: var(--color-bg-secondary);
@@ -64,7 +64,7 @@ import { Component } from '@angular/core';
 
     .footer-bottom {
       border-top: 1px solid var(--color-border-primary);
-      padding-top: var(--spacing-8);
+      padding-top: var(--spacing-4);
       text-align: center;
       font-size: var(--font-size-sm);
       color: var(--color-text-tertiary);
@@ -73,7 +73,7 @@ import { Component } from '@angular/core';
     @media (max-width: 768px) {
       .footer-grid {
         grid-template-columns: 1fr;
-        gap: var(--spacing-8);
+        gap: var(--spacing-2);
       }
     }
   `]
